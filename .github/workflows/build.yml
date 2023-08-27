@@ -1,4 +1,4 @@
-name: Next Lint
+name: next build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,5 +15,4 @@ jobs:
         with:
           node-version: 20
       - run: npm install
-      - run: npm run lint
-      - run: npm run typecheck
+      - run: npm run build
