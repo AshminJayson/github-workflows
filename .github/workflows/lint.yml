@@ -1,4 +1,4 @@
-name: Next Lint
+name: Next lint
 
 on:
   push:
